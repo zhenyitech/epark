@@ -28,9 +28,11 @@ curl --location --request POST 'https://epark.zhenyi.tech/flw/api/v1/unionpay/ca
 }
 ```
 
-> `fee`:金额是整数,3为3元
-> `new`默认保持`0`
-> `car`:车牌号码
+> `fee`: 金额是整数,3为3元
+> 
+> `new`: 默认保持`0`
+> 
+> `car`: 车牌号码
 
 
 # ~~易泊车灰度对接~~
