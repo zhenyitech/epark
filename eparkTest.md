@@ -1,4 +1,39 @@
-# 易泊车灰度对接
+# 灰度对接二
+
+
+```
+curl --location --request POST 'https://epark.zhenyi.tech/flw/api/v1/unionpay/callback/pay' \
+--header 'User-Agent: Apifox/1.0.0 (https://apifox.com)' \
+--header 'Content-Type: application/json' \
+--header 'Accept: */*' \
+--header 'Host: epark.zhenyi.tech' \
+--header 'Connection: keep-alive' \
+--data-raw '{
+    "car":"MN3770",
+    "new":0,
+    "fee":3,
+    "token3":"6263602079425767"
+}'
+```
+
+## 接口地址 `POST`
+
+`https://epark.zhenyi.tech/flw/api/v1/unionpay/callback/pay`
+
+## body
+```
+{
+    "car":"MN3770",
+    "new":0,
+    "fee":3,
+    "token3":"6263602079425767"
+}
+```
+
+> 金额是整数,3为3元
+
+
+# ~~易泊车灰度对接~~
 
 ### 请求地址
 
@@ -22,3 +57,5 @@
 > 金额6元
 
 `http://ctm.zhen-yee.com/flw/test/epark/push?plate=MN3770&fee=600`
+
+
